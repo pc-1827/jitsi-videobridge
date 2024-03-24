@@ -171,7 +171,7 @@ class ServerHelloMessage @JvmOverloads constructor(
     override fun createJson(): String =
         if (version == null) JSON_STRING_NO_VERSION else """{"colibriClass":"$TYPE","version":"$version"}"""
     companion object {
-        const val TYPE = "ServerHello"
+        const val TYPE = "ServerHelloJitsi"
         const val JSON_STRING_NO_VERSION: String = """{"colibriClass":"$TYPE"}"""
     }
 }
